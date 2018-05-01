@@ -1,4 +1,4 @@
-ARG POSTGRES_VERSION=9.6.7
+ARG POSTGRES_VERSION=10.2
 FROM postgres:${POSTGRES_VERSION}
 
 # ================================================================================================
@@ -22,11 +22,11 @@ FROM postgres:${POSTGRES_VERSION}
 
 MAINTAINER "Laradock Team <mahmoud@zalt.me>"
 
-ENV POSTGRES_ROOT_PASSWORD="root_password" \
+ENV POSTGRES_ROOT_PASSWORD="password" \
     POSTGRES_ROOT_HOST="localhost" \
-    POSTGRES_DATABASE="docker_framework" \
-    POSTGRES_USER="zeroc0d3_username" \
-    POSTGRES_PASSWORD="zeroc0d3_password" \
+    POSTGRES_DATABASE="laradock_postgresql" \
+    POSTGRES_USER="laradock" \
+    POSTGRES_PASSWORD="password" \
     PGDATA="/var/lib/postgresql/data"
 
 VOLUME /var/lib/postgresql/data
