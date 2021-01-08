@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DOCKER_IMAGE="dockerframework/postgresql"
-DOCKER_TAG="10.13"
+DOCKER_TAG="10.15"
 
 #### Halt script on error
 set -e

@@ -1,4 +1,4 @@
-ARG POSTGRES_VERSION=10.13
+ARG POSTGRES_VERSION=10.15
 FROM postgres:${POSTGRES_VERSION}
 
 # ================================================================================================
