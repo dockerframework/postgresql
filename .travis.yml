@@ -10,7 +10,7 @@ services:
 env:
   global:
     - COMMIT=${TRAVIS_COMMIT::8}
-    - REPO=dockerframework/postgresql:12.3
+    - REPO=dockerframework/postgresql:12.5
     - CGO_ENABLED=0
     - GOOS=linux
     - GOARCH=amd64
